@@ -10,8 +10,8 @@
 
 <body>
     <div class="relative w-full h-screen overflow-hidden" id="app">
-        <div class="h-full w-full flex items-center">
-            <div class="w-96 shrink-0 h-full flex flex-col justify-between py-20 px-20">
+        <div class="h-full w-full flex items-center relative">
+            <aside class="aside w-96 shrink-0 h-full flex flex-col justify-between py-20 px-20 z-30">
                 <img class="w-32" src="/logo.svg" alt="Logo" />
                 <div class="flex flex-col items-start gap-2">
                     <span class="font-bold">ALL</span>
@@ -37,54 +37,114 @@
                         Design by EmaniUI
                     </a>
                 </div>
-            </div>
-            <div class="w-1/2 h-full flex items-center overflow-hidden">
+            </aside>
+            <div
+                class="background-container relative w-[calc(50%-197px)] shrink-0 h-full flex items-center overflow-hidden">
                 <img class="background shrink-0 w-full h-full object-cover" src="/bg-1.png" alt="background" />
                 <img class="background shrink-0 w-full h-full object-cover" src="/bg-2.png" alt="background" />
                 <img class="background shrink-0 w-full h-full object-cover" src="/bg-3.png" alt="background" />
             </div>
-            <div class="w-1/2 h-full flex flex-col flex-start overflow-hidden py-24 px-20">
+            <button class="back absolute left-0 top-10 -z-30">
+                <img class="w-28" src="/back.svg" alt="back" />
+            </button>
+            <div
+                class="arrows-img-container hidden items-center gap-2 bg-white p-2 absolute bottom-4 left-[calc(50%-130px)] z-20 rounded-full">
+                <button>
+                    <img class="arrow-img-prev w-10" src="/prev.svg" alt="prev" />
+                </button>
+                <button>
+                    <img class="arrow-img-next w-10" src="/next.svg" alt="next" />
+                </button>
+            </div>
+            <div
+                class="text-container w-[calc(50%-197px)] shrink-0 h-full flex flex-col flex-start overflow-hidden py-24 px-20 z-30">
                 <span class="w-full font-semibold">New Arrivals
                     <span class="font-light">/ Shirt</span>
                 </span>
                 <div class="w-full h-full flex items-center overflow-hidden">
-                    <div class="text w-full shrink-0">
-                        <h1 class="font-bold text-6xl mb-5">NAWA Knit Polo <br>
+                    <div class="text w-full shrink-0 pr-5">
+                        <h1 class="font-bold text-5xl mb-5">NAWA Knit Polo <br>
                             Navy Stripe</h1>
                         <span class="font-semibold">120.00 EUR</span>
-                        <p class="py-10 pr-5 text-justify">Inspired by vintage football kits, tidy kit 100% cotton knit with logo
+                        <p class="py-10 text-justify">Inspired by vintage football kits, tidy kit 100% cotton knit
+                            with logo
                             embroidery at chest. Afters have never looked so good.
                             Multi stripe knit polo of the Umbrochure - a limited edition collection of pieces perfect
                             for on or off the pitch. Percival & Umbro. For the players, for the fans. Pair with
                             trackpant for GOAT look.</p>
-                    </div> <div class="text w-full shrink-0">
-                        <h1 class="font-bold text-6xl mb-5">NAWA Knit Polo <br>
+                    </div>
+                    <div class="text w-full shrink-0 pr-5">
+                        <h1 class="font-bold text-5xl mb-5">NAWA Knit Polo <br>
                             Navy Stripe</h1>
                         <span class="font-semibold">120.00 EUR</span>
-                        <p class="py-10 pr-5 text-justify">Inspired by vintage football kits, tidy kit 100% cotton knit with logo
+                        <p class="py-10 text-justify">Inspired by vintage football kits, tidy kit 100% cotton knit
+                            with logo
                             embroidery at chest. Afters have never looked so good.
                             Multi stripe knit polo of the Umbrochure - a limited edition collection of pieces perfect
                             for on or off the pitch. Percival & Umbro. For the players, for the fans. Pair with
                             trackpant for GOAT look.</p>
-                    </div> <div class="text w-full shrink-0">
-                        <h1 class="font-bold text-6xl mb-5">NAWA Knit Polo <br>
-                            Navy Stripe</h1>
+                    </div>
+                    <div class="text w-full shrink-0 pr-5">
+                        <h1 class="font-bold text-5xl mb-5">NAWA Knit Polo <br>
+                            Navy Stripe 0</h1>
                         <span class="font-semibold">120.00 EUR</span>
-                        <p class="py-10 pr-5 text-justify">Inspired by vintage football kits, tidy kit 100% cotton knit with logo
+                        <p class="py-10 text-justify">Inspired by vintage football kits, tidy kit 100% cotton knit
+                            with logo
                             embroidery at chest. Afters have never looked so good.
                             Multi stripe knit polo of the Umbrochure - a limited edition collection of pieces perfect
                             for on or off the pitch. Percival & Umbro. For the players, for the fans. Pair with
                             trackpant for GOAT look.</p>
-                        <button class="py-2 px-10 border border-black">Quick View</button>
+                        <button
+                            class="view m-1 py-2 px-10 border border-black hover:bg-black hover:text-white duration-300 transition-colors">Quick
+                            View</button>
+                    </div>
+                    <div class="text w-full shrink-0 pr-5">
+                        <h1 class="font-bold text-5xl mb-5">NAWA Knit Polo Navy Stripe</h1>
+                        <span class="font-semibold block mb-5">120.00 EUR</span>
+                        <span class="font-semibold block">XS - S - M - L - XL - XXL</span>
+                        <div class="m-1 w-full flex items-center justify-center gap-4 mt-10 mb-3">
+                            <button
+                                class="w-full py-2 border border-black hover:bg-black hover:text-white duration-300 transition-colors">
+                                ADD TO BAG</button>
+                            <button
+                                class="w-full py-2 bg-[#FFBE16] border border-[#FFBE16] text-black hover:bg-black hover:text-white hover:border-black duration-300 transition-colors">Buy
+                                with Amazon</button>
+                        </div>
+                        <p class="py-10 text-justify">Inspired by vintage football kits, tidy kit 100% cotton knit
+                            with logo
+                            embroidery at chest. Afters have never looked so good.
+                            Multi stripe knit polo of the Umbrochure - a limited edition collection of pieces perfect
+                            for on or off the pitch. Percival & Umbro. For the players, for the fans. Pair with
+                            trackpant for GOAT look.</p>
                     </div>
                 </div>
-                <div class="flex items-center gap-2">
+                <div class="arrows-container flex items-center gap-2">
                     <button>
                         <img class="arrow-prev w-10" src="/prev.svg" alt="prev" />
                     </button>
                     <button>
                         <img class="arrow-next w-10" src="/next.svg" alt="next" />
                     </button>
+                </div>
+            </div>
+            <div class="absolute w-full h-full inset-0 flex items-center justify-start z-10">
+                <div class="photo shrink-0 flex items-end w-full h-full">
+                    <img class="object-cover" src="/photo-1.png" alt="photo" />
+                </div>
+                <div class="photo shrink-0 flex items-end w-full h-full">
+                    <img class="object-cover" src="/photo-2.png" alt="photo" />
+                </div>
+                <div class="photo photo-3 shrink-0 flex items-end w-full h-full">
+                    <img class="object-cover" src="/photo-3.png" alt="photo" />
+                </div>
+                <div class="photo photo-detail shrink-0 flex items-end w-full h-full">
+                    <img class="object-cover" src="/photo-3-1.png" alt="photo" />
+                </div>
+                <div class="photo photo-detail shrink-0 flex items-end w-full h-full">
+                    <img class="object-cover" src="/photo-3-2.png" alt="photo" />
+                </div>
+                <div class="photo photo-detail shrink-0 flex items-end w-full h-full">
+                    <img class="object-cover" src="/photo-3-3.png" alt="photo" />
                 </div>
             </div>
         </div>

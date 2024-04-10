@@ -2,29 +2,94 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8"/>
-    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VITE APP / SCSS / GSAP / TAILWIND</title>
 </head>
 
 <body>
-<div class="relative h-screen overflow-hidden" id="app">
-    <footer class="z-40 absolute bottom-0 w-full flex items-center justify-between py-2 px-6 text-black font-semibold">
-        <a class="underline underline-offset-2" href="https://x.com/ln_dev7">
-            Code by LN
-        </a>
-        <a class="underline underline-offset-2" href="https://github.com/ln-dev7/Shopping-Website-Prototype-with-Parralax-Effect">
-            GitHub
-        </a>
-        <a class="underline underline-offset-2"
-           href="https://x.com/EmaniUi/status/1777632182464356725">
-            Design by EmaniUI
-        </a>
-    </footer>
-    <div class=""></div>
-</div>
-<script type="module" src="/main.js"></script>
+    <div class="relative w-full h-screen overflow-hidden" id="app">
+        <div class="h-full w-full flex items-center">
+            <div class="w-96 shrink-0 h-full flex flex-col justify-between py-20 px-20">
+                <img class="w-32" src="/logo.svg" alt="Logo" />
+                <div class="flex flex-col items-start gap-2">
+                    <span class="font-bold">ALL</span>
+                    <span>SHIRTING</span>
+                    <span>OUTERWEAR</span>
+                    <span>KNITWEAR</span>
+                    <span>SWEATS</span>
+                    <span>TROUSERS</span>
+                    <span>ACCESSORIES</span>
+                    <span>GIFT CARDS</span>
+                    <span>VISIT THE SHOWROOM</span>
+                    <span>FEATURES</span>
+                </div>
+                <div class="flex flex-col items-start gap-2 font-semibold">
+                    <a class="underline underline-offset-2" href="https://x.com/ln_dev7">
+                        Code by LN
+                    </a>
+                    <a class="underline underline-offset-2"
+                        href="https://github.com/ln-dev7/Shopping-Website-Prototype-with-Parralax-Effect">
+                        GitHub
+                    </a>
+                    <a class="underline underline-offset-2" href="https://x.com/EmaniUi/status/1777632182464356725">
+                        Design by EmaniUI
+                    </a>
+                </div>
+            </div>
+            <div class="w-1/2 h-full flex items-center overflow-hidden">
+                <img class="background shrink-0 w-full h-full object-cover" src="/bg-1.png" alt="background" />
+                <img class="background shrink-0 w-full h-full object-cover" src="/bg-2.png" alt="background" />
+                <img class="background shrink-0 w-full h-full object-cover" src="/bg-3.png" alt="background" />
+            </div>
+            <div class="w-1/2 h-full flex flex-col flex-start overflow-hidden py-24 px-20">
+                <span class="w-full font-semibold">New Arrivals
+                    <span class="font-light">/ Shirt</span>
+                </span>
+                <div class="w-full h-full flex items-center overflow-hidden">
+                    <div class="text w-full shrink-0">
+                        <h1 class="font-bold text-6xl mb-5">NAWA Knit Polo <br>
+                            Navy Stripe</h1>
+                        <span class="font-semibold">120.00 EUR</span>
+                        <p class="py-10 pr-5 text-justify">Inspired by vintage football kits, tidy kit 100% cotton knit with logo
+                            embroidery at chest. Afters have never looked so good.
+                            Multi stripe knit polo of the Umbrochure - a limited edition collection of pieces perfect
+                            for on or off the pitch. Percival & Umbro. For the players, for the fans. Pair with
+                            trackpant for GOAT look.</p>
+                    </div> <div class="text w-full shrink-0">
+                        <h1 class="font-bold text-6xl mb-5">NAWA Knit Polo <br>
+                            Navy Stripe</h1>
+                        <span class="font-semibold">120.00 EUR</span>
+                        <p class="py-10 pr-5 text-justify">Inspired by vintage football kits, tidy kit 100% cotton knit with logo
+                            embroidery at chest. Afters have never looked so good.
+                            Multi stripe knit polo of the Umbrochure - a limited edition collection of pieces perfect
+                            for on or off the pitch. Percival & Umbro. For the players, for the fans. Pair with
+                            trackpant for GOAT look.</p>
+                    </div> <div class="text w-full shrink-0">
+                        <h1 class="font-bold text-6xl mb-5">NAWA Knit Polo <br>
+                            Navy Stripe</h1>
+                        <span class="font-semibold">120.00 EUR</span>
+                        <p class="py-10 pr-5 text-justify">Inspired by vintage football kits, tidy kit 100% cotton knit with logo
+                            embroidery at chest. Afters have never looked so good.
+                            Multi stripe knit polo of the Umbrochure - a limited edition collection of pieces perfect
+                            for on or off the pitch. Percival & Umbro. For the players, for the fans. Pair with
+                            trackpant for GOAT look.</p>
+                        <button class="py-2 px-10 border border-black">Quick View</button>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2">
+                    <button>
+                        <img class="arrow-prev w-10" src="/prev.svg" alt="prev" />
+                    </button>
+                    <button>
+                        <img class="arrow-next w-10" src="/next.svg" alt="next" />
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/main.js"></script>
 </body>
 
 </html>
